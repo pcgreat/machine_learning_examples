@@ -1,6 +1,5 @@
 # https://deeplearningcourses.com/c/artificial-intelligence-reinforcement-learning-in-python
 # https://www.udemy.com/artificial-intelligence-reinforcement-learning-in-python
-from __future__ import print_function, division
 
 import numpy as np
 

@@ -1,7 +1,5 @@
 # https://deeplearningcourses.com/c/artificial-intelligence-reinforcement-learning-in-python
 # https://www.udemy.com/artificial-intelligence-reinforcement-learning-in-python
-from __future__ import print_function, division
-
 import numpy as np
 
 from rl.grid_world import negative_grid
@@ -68,7 +66,7 @@ if __name__ == '__main__':
                         else:
                             p = 0.5 / 3
                         grid.set_state(s)
-                        r = grid.move(a)
+                        r = grid.move(a)  # move() will check whether it's legal
                         new_v += p * (r + GAMMA * V[grid.current_state()])
                     V[s] = new_v
                     biggest_change = max(biggest_change, np.abs(old_v - V[s]))

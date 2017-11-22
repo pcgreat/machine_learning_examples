@@ -1,7 +1,5 @@
 # https://deeplearningcourses.com/c/artificial-intelligence-reinforcement-learning-in-python
 # https://www.udemy.com/artificial-intelligence-reinforcement-learning-in-python
-from __future__ import print_function, division
-
 
 # Note: you may need to update your version of future
 # sudo pip install -U future
@@ -110,6 +108,6 @@ def negative_grid(step_cost=-0.1):
         (2, 0): step_cost,
         (2, 1): step_cost,
         (2, 2): step_cost,
-        (2, 3): step_cost,
+        (2, 3): step_cost
     })
     return g
